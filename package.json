@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "my portfolio of 2020",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "bootstrap"
+  ],
+  "author": "Curtis Pritchard",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  }
+}
