@@ -1,0 +1,27 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);
+body header {
+  width: 100%;
+}
+body header .stuffer {
+  height: calc(100vh / 3 - 100px);
+  max-height: calc(100vh / 3 - 100px);
+  transition: max-height 0.6s ease;
+}
+body header h1 {
+  font-size: 100px;
+  transition-duration: 0.4s;
+}
+body header h1 ~ div {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body header h1 ~ div div {
+  display: inline-block;
+  width: calc(100%/3);
+  text-align: center;
+  transition: max-height ease;
+  overflow: hidden;
+  font-size: 32px;
+}
