@@ -1,18 +1,23 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "my portfolio of 2020",
-  "main": "index.html",
+  "description": "updated version of a portfolio",
+  "main": "script.js",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "html",
-    "bootstrap"
-  ],
-  "author": "Curtis Pritchard",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPritchard007/portfolio-2020.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.0.0-beta1"
-  }
+  "bugs": {
+    "url": "https://github.com/CPritchard007/portfolio-2020/issues"
+  },
+  "homepage": "https://github.com/CPritchard007/portfolio-2020#readme"
 }
