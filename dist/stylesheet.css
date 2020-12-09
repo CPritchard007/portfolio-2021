@@ -1,6 +1,12 @@
-@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);
+
+* {padding: 0;margin: 0;}
+
+
+
 body header {
+  position: fixed;
   width: 100%;
+  background-color: blueviolet;
 }
 body header .stuffer {
   height: calc(100vh / 3 - 100px);
