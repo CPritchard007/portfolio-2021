@@ -10620,6 +10620,20 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
+  .icon i {
+    font-size: 60px;
+  }
+  .icon p {
+    font-weight: 600;
+  }
+
+  .lrg-icon i {
+    font-size: 200px;
+  }
+  .lrg-icon p {
+    font-weight: 600;
+  }
+
   body header {
     width: 100%;
   }
@@ -10645,5 +10659,20 @@ textarea.form-control-lg {
     overflow: hidden;
     padding-bottom: 10px;
     font-size: 32px;
+  }
+  body .topS {
+    height: 500px;
+    width: 100%;
+  }
+  body section #languages {
+    display: flex;
+    justify-content: space-around;
+  }
+  body section #languages div {
+    width: 400px;
+  }
+
+  h2, .h2 {
+    padding-top: 60px;
   }
 }
