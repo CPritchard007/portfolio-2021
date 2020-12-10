@@ -1,5 +1,6 @@
 $primary: #252323;
-
+$body-bg: #bfc0c4;
+$secondary: #fcfcfc;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -7,8 +8,6 @@ $primary: #252323;
 $h1:  100px;
 
 @media (min-width: 992px) {
-
-
     .icon {
         i {
             font-size: 60px;
@@ -28,7 +27,7 @@ $h1:  100px;
     }
 
     body {
-
+        overflow-x: hidden;
         header {
             width: 100%;
             .stuffer {
@@ -40,7 +39,7 @@ $h1:  100px;
             h1 {
                 font-size: $h1;
                 transition-duration: 0.4s;
-                
+                text-indent: 20px;
                     ~ div {
                         position: relative;
                         bottom: 0;
@@ -61,7 +60,7 @@ $h1:  100px;
         }
 
         .topS {
-            height: 500px;
+            height: 400px;
             width: 100%;
             //background-color: red;
         }
@@ -69,15 +68,51 @@ $h1:  100px;
         section {
             #languages {
                 display: flex;
+                flex: 0 0 1;
                 justify-content: space-around;
                 div {
                     width: 400px;
+                }  
+            }
+
+            #projects {
+                .card {
+                    height: 400px;
+
+                    .card-title {
+                        font-weight: 600;
+                        font-size: 20px;
+                    }
+
+                    .image {
+                        width: 100%;
+                        height: 230px;
+                        padding: 0;
+                        margin: 0;
+                        background-color: $primary;
+                        background-size: 50%;
+                        background-repeat: no-repeat;
+                        background-position: top center;
+                    } 
+
+                    .card-text {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        overflow: hidden;
+                        //background-color: lightblue;
+                        height: 105px;
+                        padding: 10px;
+                        transition: ease 0.5s;
+                    }
                 }
             }
         }
     }
-
     h2 {
-        padding-top: 60px;
+        padding-top: 100px;
     }
+    
+    
 }

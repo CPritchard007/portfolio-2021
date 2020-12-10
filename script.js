@@ -17,7 +17,7 @@ window.onscroll = function () {
     
     });
 
-
+    
     } else {
         
         document.querySelector('.stuffer').style.maxHeight = "calc(100vh / 3 - " + h1
