@@ -10649,25 +10649,6 @@ textarea.form-control-lg {
     max-height: calc(100vh / 3 - 100px);
     transition: max-height 0.6s ease;
   }
-  body header h1, body header .h1 {
-    font-size: 100px;
-    transition-duration: 0.4s;
-    text-indent: 20px;
-  }
-  body header h1 ~ div, body header .h1 ~ div {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  body header h1 ~ div div, body header .h1 ~ div div {
-    display: inline-block;
-    width: calc(100%/3);
-    text-align: center;
-    overflow: hidden;
-    padding-bottom: 10px;
-    font-size: 32px;
-  }
   body .topS {
     height: 400px;
     width: 100%;
@@ -10703,7 +10684,31 @@ textarea.form-control-lg {
     transition: ease 0.5s;
   }
 
+  h1, .h1 {
+    font-size: 100px;
+    transition-duration: 0.4s;
+    text-indent: 20px;
+  }
+  h1 ~ div, .h1 ~ div {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  h1 ~ div div, .h1 ~ div div {
+    display: inline-block;
+    width: calc(100%/3);
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 10px;
+    font-size: 32px;
+  }
+
   h2, .h2 {
     padding-top: 100px;
+  }
+
+  h3, .h3 {
+    padding: 16px 0;
   }
 }
