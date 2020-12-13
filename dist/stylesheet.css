@@ -10623,7 +10623,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 750px) {
   .icon i {
     font-size: 60px;
   }
@@ -10672,13 +10672,8 @@ textarea.form-control-lg {
     height: 400px;
     width: 100%;
   }
-  body section #languages {
-    display: flex;
-    flex: 0 0 1;
-    justify-content: space-around;
-  }
   body section #languages div {
-    width: 400px;
+    width: 33%;
   }
   body section #projects .card {
     height: 400px;
