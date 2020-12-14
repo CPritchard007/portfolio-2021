@@ -7,7 +7,7 @@ $secondary: #fcfcfc;
 
 $h1:  100px;
 
-@media (min-width: 750px) {
+ //@media (min-width: 750px) {
     .icon {
         i {
             font-size: 60px;
@@ -46,14 +46,11 @@ $h1:  100px;
         }
 
         section {
+            
             #languages {
                 div {
                     width: 33%;
-
-                    div {
-                    }
                 }
-             
             }
             #projects {
                 .card {
@@ -116,4 +113,4 @@ $h1:  100px;
         padding: 16px 0;
         // background-color: aqua;
     }
-}
+ //}
