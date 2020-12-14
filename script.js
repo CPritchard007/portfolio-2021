@@ -3,15 +3,12 @@
 let h1 = "100px";
 
 window.onscroll = function () {
-    if (screen.width < 800) {
-        console.log("too small")
-        return
-    }
+   
     let scrollTop = document.body.scrollTop;
     let elmScrollTop = document.documentElement.scrollTop;
     // console.log(scrollTop + " - " + elmScrollTop)
     
-    if (scrollTop > 150 || elmScrollTop > 150) {
+    if (scrollTop > 150 || elmScrollTop > 150 && screen.width < 800) {
         document.querySelector(".stuffer").style.maxHeight = "0"
         document.querySelector("h1").style.fontSize = "30px";
         document.querySelector("header h1 ~ div div").style.maxHeight = "0";
