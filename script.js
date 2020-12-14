@@ -3,9 +3,13 @@
 let h1 = "100px";
 
 window.onscroll = function () {
+    if (screen.width < 800) {
+        console.log("too small")
+        return
+    }
     let scrollTop = document.body.scrollTop;
     let elmScrollTop = document.documentElement.scrollTop;
-    console.log(scrollTop + " - " + elmScrollTop)
+    // console.log(scrollTop + " - " + elmScrollTop)
     
     if (scrollTop > 150 || elmScrollTop > 150) {
         document.querySelector(".stuffer").style.maxHeight = "0"
