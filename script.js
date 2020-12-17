@@ -8,7 +8,7 @@ window.onscroll = function () {
     let elmScrollTop = document.documentElement.scrollTop;
     // console.log(scrollTop + " - " + elmScrollTop)
     
-    if (scrollTop > 150 || elmScrollTop > 150 && screen.width < 800) {
+    if (scrollTop > 150 || elmScrollTop > 150) {
         document.querySelector(".stuffer").style.maxHeight = "0"
         document.querySelector("h1").style.fontSize = "30px";
         document.querySelector("header h1 ~ div div").style.maxHeight = "0";
