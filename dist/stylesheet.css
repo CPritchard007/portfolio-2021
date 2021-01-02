@@ -10623,7 +10623,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
+html {
   overflow-x: hidden;
 }
 
