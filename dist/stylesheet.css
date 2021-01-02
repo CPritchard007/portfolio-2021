@@ -10655,32 +10655,40 @@ body .topS {
 body section #languages div {
   width: 33%;
 }
-body section #projects .card {
-  height: 400px;
+body section #projects .card .card-body {
+  position: relative;
 }
-body section #projects .card .card-title {
-  font-weight: 600;
-  font-size: 20px;
-}
-body section #projects .card .image {
-  width: 100%;
-  height: 230px;
-  padding: 0;
-  margin: 0;
-  background-color: #252323;
-  background-size: 50%;
+body section #projects .card .card-body .image-capsule {
+  display: block;
+  float: left;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
 }
-body section #projects .card .card-text {
+body section #projects .card .card-body .card-title {
+  float: left;
+  width: calc(100% - 80px);
+  box-sizing: content-box;
+}
+body section #projects .card .card-body .card-text {
+  clear: left;
+  text-indent: 30px;
+}
+body section #projects .card .card-body .toGithub {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
+  height: 30px;
   width: 100%;
-  overflow: hidden;
-  height: 105px;
-  padding: 10px;
-  transition: ease 0.5s;
+}
+body section #projects .card .card-body .toGithub a {
+  position: absolute;
+  font-weight: 500;
+  top: 15%;
+  right: 0;
+  text-decoration: none;
 }
 
 h1, .h1 {
