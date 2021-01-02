@@ -10655,6 +10655,10 @@ body .topS {
 body section #languages div {
   width: 33%;
 }
+body section #projects .card {
+  font-size: 14px;
+  text-align: justify;
+}
 body section #projects .card .card-body {
   position: relative;
 }
@@ -10668,13 +10672,14 @@ body section #projects .card .card-body .image-capsule {
   background-repeat: no-repeat;
 }
 body section #projects .card .card-body .card-title {
+  position: relative;
   float: left;
   width: calc(100% - 80px);
+  padding: 0;
   box-sizing: content-box;
 }
 body section #projects .card .card-body .card-text {
   clear: left;
-  text-indent: 30px;
 }
 body section #projects .card .card-body .toGithub {
   position: absolute;
