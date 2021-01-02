@@ -10623,6 +10623,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  overflow-x: hidden;
+}
+
 .icon i {
   font-size: 60px;
 }
