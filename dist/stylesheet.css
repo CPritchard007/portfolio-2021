@@ -10643,14 +10643,21 @@ body {
 body header {
   width: 100%;
 }
-body header .stuffer {
-  height: calc(100vh / 3 - 100px);
-  max-height: calc(100vh / 3 - 100px);
-  transition: max-height 0.6s ease;
+@media screen and (min-width: 600px) {
+  body header .stuffer {
+    height: calc(100vh / 3 - 100px);
+    max-height: calc(100vh / 3 - 100px);
+    transition: max-height 0.6s ease;
+  }
 }
 body .topS {
-  height: 400px;
+  height: 100px;
   width: 100%;
+}
+@media screen and (min-width: 600px) {
+  body .topS {
+    height: 400px;
+  }
 }
 body section #languages div {
   width: 33%;
@@ -10701,11 +10708,21 @@ h1, .h1 {
   transition-duration: 0.4s;
   text-indent: 20px;
 }
+@media screen and (max-width: 600px) {
+  h1, .h1 {
+    font-size: 30px !important;
+  }
+}
 h1 ~ div, .h1 ~ div {
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  h1 ~ div, .h1 ~ div {
+    display: none;
+  }
 }
 h1 ~ div div, .h1 ~ div div {
   display: inline-block;

@@ -17,7 +17,7 @@ $h1:  100px;
         }
     }
 
-    .lrg-icon {
+    .lrg-icon {     
         i {
             font-size: 200px;
         }
@@ -31,18 +31,24 @@ $h1:  100px;
         header {
             width: 100%;
             .stuffer {
-                height: calc(100vh / 3 - #{$h1});
-                max-height: calc(100vh / 3 - #{$h1});
-                transition: max-height 0.6s ease;
+                @media screen and (min-width: 600px){
+                    height: calc(100vh / 3 - #{$h1});
+                    max-height: calc(100vh / 3 - #{$h1});
+                    transition: max-height 0.6s ease;                    
+                }
             }
 
             
         }
 
         .topS {
-            height: 400px;
-            width: 100%;
-            //background-color: red;
+            @media screen and (min-width: 600px) {   
+                height: 400px;
+            }
+                height: 100px;
+                width: 100%;
+            // background-color: red;
+            
         }
 
         section {
@@ -105,10 +111,17 @@ $h1:  100px;
     }
 
     h1 {
+
+        @media screen and (max-width: 600px){
+            font-size: 30px !important;
+        }
         font-size: $h1;
         transition-duration: 0.4s;
         text-indent: 20px;
         ~ div {
+            @media screen and (max-width: 600px){
+                display: none;
+            }
             position: relative;
             bottom: 0;
             left: 0;
