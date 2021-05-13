@@ -1,6 +1,6 @@
 
 
-let h1 = "100px";
+let h1 = "60px";
 
 
 window.onscroll = function () {
@@ -23,9 +23,9 @@ window.onscroll = function () {
         } else {
             
             document.querySelector('.stuffer').style.maxHeight = "calc(100vh / 3 - " + h1
-            document.querySelector("h1").style.fontSize = "100px"
+            document.querySelector("h1").style.fontSize = "80px"
             document.querySelectorAll("header h1 ~ div div").forEach( elm => {
-            elm.style.maxHeight = "60px"; 
+            elm.style.maxHeight = "80px"; 
             elm.style.position = "relative";
             });
 

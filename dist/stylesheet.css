@@ -10649,8 +10649,8 @@ body header {
 }
 @media screen and (min-width: 600px) {
   body header .stuffer {
-    height: calc(100vh / 3 - 100px);
-    max-height: calc(100vh / 3 - 100px);
+    height: calc(100vh / 3 - 80px);
+    max-height: calc(100vh / 3 - 80px);
     transition: max-height 0.6s ease;
   }
 }
@@ -10708,7 +10708,9 @@ body section #projects .card .card-body .toGithub a {
 }
 
 h1, .h1 {
-  font-size: 100px;
+  width: 40%;
+  float: left;
+  font-size: 80px;
   transition-duration: 0.4s;
   text-indent: 20px;
 }
@@ -10718,10 +10720,11 @@ h1, .h1 {
   }
 }
 h1 ~ div, .h1 ~ div {
-  position: relative;
+  width: 60%;
+  display: inline-block;
+  position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
 }
 @media screen and (max-width: 600px) {
   h1 ~ div, .h1 ~ div {
@@ -10735,6 +10738,7 @@ h1 ~ div div, .h1 ~ div div {
   overflow: hidden;
   padding-bottom: 10px;
   font-size: 32px;
+  color: #ababab;
 }
 
 h2, .h2 {

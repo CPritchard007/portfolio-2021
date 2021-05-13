@@ -5,7 +5,7 @@ $secondary: #fcfcfc;
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
 
-$h1:  100px;
+$h1:  80px;
 html {
     overflow-x: hidden;
 }
@@ -38,7 +38,15 @@ html {
                     max-height: calc(100vh / 3 - #{$h1});
                     transition: max-height 0.6s ease;                    
                 }
+                
+            .textContainer {
+                
+                
             }
+
+            }
+
+            
 
             
         }
@@ -113,7 +121,8 @@ html {
     }
 
     h1 {
-
+        width: 40%;
+        float: left;
         @media screen and (max-width: 600px){
             font-size: 30px !important;
         }
@@ -121,13 +130,15 @@ html {
         transition-duration: 0.4s;
         text-indent: 20px;
         ~ div {
+            width: 60%;            
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
             @media screen and (max-width: 600px){
                 display: none;
             }
-            position: relative;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+            
             div {
                 display: inline-block;
                 width: calc(100%/3);
@@ -135,6 +146,7 @@ html {
                 overflow: hidden;
                 padding-bottom: 10px;
                 font-size: 32px;
+                color: #ababab;
             }
         }
     }    
