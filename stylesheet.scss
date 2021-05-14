@@ -40,9 +40,6 @@ html {
                 }
 
             }
-
-            
-
             
         }
 
@@ -119,14 +116,19 @@ html {
                 display: flex;
                 padding: 15px;
                 position: relative;
+
+                
+
                 div.logoContainer {
-                    width: 30%;
+                    
+                    
                     img {
                         width: 150px;
                         height: 150px;
                         border-radius: 50%;
                         border: 8px white solid;
-                        margin-top: 25px
+                        margin-top: 25px;
+                        background-color: whitesmoke;
                     }
                 }
                 .descriptionContainer {
@@ -174,12 +176,42 @@ html {
                         
                     }
                     &:hover p {
-                        
-                        width: 120px;
+                        width: 110px;
                     }
                     
                 }
                 
+            }
+
+            .milestoneItemContainer {
+                @media screen and (max-width: 600px){
+                    margin-top: 40px;
+                    width: 100%;
+                    padding: 0;
+                    display: block;      
+                    // background-color: lightgreen;
+                                  
+                    div.logoContainer {    
+                        
+                        justify-content: center;
+                        // background-color: indianred;
+                        text-align: center;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            margin: auto;
+                        }
+                    }
+                    h3 {
+                        padding-top: 0;
+                        text-align: center;
+                    }
+                    .descriptionContainer p {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
             }
         }
     }
