@@ -10666,45 +10666,65 @@ body .topS {
 body section #languages div {
   width: 33%;
 }
-body section #projects .card {
-  font-size: 14px;
+body section .milestoneItemContainer {
+  width: 80%;
+  margin: auto;
+  flex-direction: row;
+  display: flex;
+  padding: 15px;
+  position: relative;
+}
+body section .milestoneItemContainer div.logoContainer {
+  width: 30%;
+}
+body section .milestoneItemContainer div.logoContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px white solid;
+  margin-top: 25px;
+}
+body section .milestoneItemContainer .descriptionContainer {
+  padding: 15px;
+}
+body section .milestoneItemContainer .descriptionContainer h3, body section .milestoneItemContainer .descriptionContainer .h3 {
+  font-size: 32px;
+  color: black;
+}
+body section .milestoneItemContainer .descriptionContainer p {
+  font-size: 21px;
+  font-weight: 600;
   text-align: justify;
 }
-body section #projects .card .card-body {
-  position: relative;
-}
-body section #projects .card .card-body .image-capsule {
-  display: block;
-  float: left;
-  width: 80px;
-  height: 80px;
-  top: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-body section #projects .card .card-body .card-title {
-  position: relative;
-  float: left;
-  width: calc(100% - 80px);
-  padding: 0;
-  box-sizing: content-box;
-}
-body section #projects .card .card-body .card-text {
-  clear: left;
-}
-body section #projects .card .card-body .toGithub {
+body section .milestoneItemContainer a {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 30px;
-  width: 100%;
-}
-body section #projects .card .card-body .toGithub a {
-  position: absolute;
-  font-weight: 500;
-  top: 15%;
-  right: 0;
+  display: flex;
+  background-color: white;
+  padding: 2px 2px 2px 2px;
+  border-radius: 20px;
+  justify-content: center;
+  border: 1px black solid;
+  height: 35px;
+  padding-right: 2px;
   text-decoration: none;
+}
+body section .milestoneItemContainer a i {
+  position: relative;
+  font-size: 28px;
+}
+body section .milestoneItemContainer a p {
+  padding-top: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  align-self: center;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.6s ease-in-out;
+}
+body section .milestoneItemContainer a:hover p {
+  width: 120px;
 }
 
 h1, .h1 {
