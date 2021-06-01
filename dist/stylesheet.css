@@ -10663,6 +10663,50 @@ body .topS {
     height: 400px;
   }
 }
+body .contact {
+  background-color: white;
+  border: solid #565656;
+  border-width: 4px 0;
+  display: flex;
+  padding: 0 0 0 10px;
+}
+body .contact h2, body .contact .h2 {
+  padding: 16px 0 0 0;
+  margin: 0;
+  width: 20%;
+}
+body .contact div {
+  width: 79%;
+  display: flex;
+  justify-content: space-around;
+}
+body .contact div a {
+  padding: 14px 0 0 0;
+  display: flex;
+  text-decoration: none;
+}
+body .contact div a i {
+  font-size: 42px;
+  font-weight: 900;
+  padding: 6px 0;
+}
+body .contact div a p {
+  font-size: 25px;
+  padding: 5px;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  body .contact {
+    display: block;
+  }
+  body .contact h2, body .contact .h2, body .contact div a {
+    width: 100%;
+    padding: 2px;
+  }
+  body .contact div {
+    display: block;
+  }
+}
 body section #languages div {
   width: 33%;
 }
